@@ -166,3 +166,89 @@ sup a {
 sup a:hover {
     text-decoration: underline;
 }
+
+/* ========== NAUJI: MOBILE RESPONSIVE STILIAI ==========
+   Tai veiks ant ekranų mažesnių nei 768px (dauguma telefonų) */
+@media (max-width: 768px) {
+    /* Bendras konteineris – pilnas plotis */
+    #content {
+        width: 100% !important;
+        border-left: none;
+        border-right: none;
+        margin: 0;
+    }
+
+    .mw-body {
+        padding: 0.5em; /* Mažesnis padding mobiliajam */
+        font-size: 1em; /* Didesnis šriftas skaitomumui */
+    }
+
+    /* Antraštės – mažesnės, bet centre */
+    .mw-body h1 {
+        font-size: 1.5em;
+        text-align: left; /* Mobiliame – kairiau, kaip Wikipedia */
+    }
+
+    .mw-body h2 {
+        font-size: 1.3em;
+    }
+
+    .mw-body h3 {
+        font-size: 1.1em;
+    }
+
+    /* Infobox – juda į viršų, užima pilną plotį */
+    .infobox {
+        float: none !important;
+        width: 100% !important;
+        margin: 0 0 1em 0 !important;
+        clear: both;
+    }
+
+    /* Tekstas – pilnas plotis, didesnis tarpas */
+    .mw-body p {
+        font-size: 1em;
+        line-height: 1.7; /* Daugiau tarpų skaitant pirštu */
+        text-align: justify;
+    }
+
+    /* Header – pilnas plotis, mygtukai vienas po kito */
+    header {
+        padding: 0.5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .language-selector {
+        margin: 0.5em 0 0 0;
+    }
+
+    .language-selector button {
+        margin: 0.25em;
+        padding: 0.75em 1.5em; /* Didesni mygtukai pirštui */
+        font-size: 1em;
+    }
+
+    /* Nuotrauka – pilnas plotis */
+    .infobox img {
+        width: 100%;
+        max-width: 250px; /* Ne per didelė */
+    }
+
+    /* Išnašos – kompaktiškesnės */
+    .references {
+        margin-top: 1.5em;
+    }
+}
+
+/* Papildomas: Planšetėms (768–1024px) – tarpinis */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #content {
+        width: 100%;
+    }
+
+    .infobox {
+        width: 250px;
+    }
+}
