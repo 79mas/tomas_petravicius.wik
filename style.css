@@ -1,0 +1,168 @@
+/* Overall Layout (Width, Margins, Container) */
+#content {
+    margin: 0 auto;
+    width: 960px;
+    background: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    clear: both;
+    position: relative;
+    font-family: 'Linux Libertine', 'Georgia', serif;
+    line-height: 1.5;
+}
+
+.mw-body {
+    padding: 1em;
+    margin: 0;
+    background: white;
+    color: #202122;
+    direction: ltr;
+}
+
+/* Main Content Elements (Fonts, Spacing) */
+.mw-body p {
+    margin: 1em 0;
+    line-height: 1.6;
+    font-size: 0.875em;
+    text-align: left;
+    orphans: 3;
+    widows: 3;
+}
+
+.mw-body {
+    font-size: 0.875em; /* Base font size for body */
+    font-family: 'Linux Libertine', 'Georgia', serif; /* Wikipedia's serif body font */
+}
+
+/* Headings (h1, h2, h3) */
+.mw-body h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0.25em 0 0.5em 0;
+    border-bottom: 1px solid #a2a9b1;
+    padding-bottom: 0.25em;
+    font-family: 'Linux Libertine', 'Georgia', serif;
+    text-align: center;
+}
+
+.mw-body h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0.5em 0 0.25em 0;
+    padding: 0.25em 0;
+    border-bottom: 1px solid #a2a9b1;
+    font-family: 'Linux Libertine', 'Georgia', serif;
+}
+
+.mw-body h3 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0.5em 0 0.25em 0;
+    font-family: 'Linux Libertine', 'Georgia', serif;
+}
+
+/* Infobox Table (.infobox table) */
+.infobox {
+    float: right;
+    width: 300px;
+    margin: 0 0 1em 1em;
+    border: 1px solid #a2a9b1;
+    background: white;
+    font-size: 0.875em;
+    clear: right;
+}
+
+.infobox table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0;
+    font-size: inherit;
+    line-height: 1.2;
+}
+
+.infobox th {
+    background: #f8f9fa;
+    padding: 0.25em 0.5em;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #a2a9b1;
+    vertical-align: top;
+}
+
+.infobox td {
+    padding: 0.25em 0.5em;
+    border: 1px solid #a2a9b1;
+    vertical-align: top;
+}
+
+.infobox img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background: #f8f9fa;
+    border-bottom: 1px solid #a2a9b1;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.wiki-logo {
+    height: 50px;
+    vertical-align: middle;
+}
+
+.language-selector {
+    margin-left: 1em;
+    font-size: 1em;
+    display: inline-block;
+}
+
+.language-selector button {
+    background: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    margin: 0 0.5em;
+}
+
+.language-selector button:hover {
+    background: #e8f2ff;
+}
+
+.language-selector button.active {
+    background: #fff;
+    font-weight: bold;
+}
+
+/* Content Sections for Languages */
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
+
+/* References */
+.references {
+    margin-top: 2em;
+    border-top: 1px solid #a2a9b1;
+    padding-top: 1em;
+}
+
+.references ol {
+    list-style-position: inside;
+}
+
+sup a {
+    text-decoration: none;
+    color: #202122;
+}
+
+sup a:hover {
+    text-decoration: underline;
+}
